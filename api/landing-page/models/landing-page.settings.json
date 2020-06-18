@@ -1,0 +1,18 @@
+{
+  "kind": "singleType",
+  "collectionName": "landing_pages",
+  "info": {
+    "name": "Landing Page"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "our_peoples": {
+      "type": "component",
+      "repeatable": true,
+      "component": "card.our-people"
+    }
+  }
+}
