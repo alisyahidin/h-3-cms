@@ -20,7 +20,7 @@ const LeftMenuLinksSection = ({
 }) => {
   const [search, setSearch] = useState('');
 
-  const filteredList = sortBy(
+  let filteredList = sortBy(
     matchSorter(links, search, {
       keys: ['label'],
     }),
@@ -38,7 +38,9 @@ const LeftMenuLinksSection = ({
     return `/plugins/${link.plugin}/${link.destination || link.uid}`;
   };
 
-  if (section === 'plugins' && process.env.NODE_ENV === 'production') return null
+  if (section === 'plugins' && process.env.NODE_ENV === 'production') {
+    filteredList = filteredList.filter(({ destination }) => destination === '/plugins/upload')
+  }
 
   return (
     <>

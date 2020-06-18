@@ -1,0 +1,24 @@
+{
+  "kind": "singleType",
+  "collectionName": "our_works_pages",
+  "info": {
+    "name": "Our Works Page"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "richtext"
+    },
+    "works": {
+      "type": "component",
+      "repeatable": true,
+      "component": "card.our-work"
+    }
+  }
+}

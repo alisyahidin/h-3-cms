@@ -1,0 +1,24 @@
+{
+  "kind": "singleType",
+  "collectionName": "awards_pages",
+  "info": {
+    "name": "Awards Page"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "richtext"
+    },
+    "awards": {
+      "type": "component",
+      "repeatable": true,
+      "component": "card.award"
+    }
+  }
+}
