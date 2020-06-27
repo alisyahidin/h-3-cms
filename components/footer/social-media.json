@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_footer_social_medias",
+  "info": {
+    "name": "social_media",
+    "icon": "bars"
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "enumeration",
+      "enum": [
+        "instagram",
+        "facebook",
+        "twitter",
+        "linkedin"
+      ]
+    },
+    "link": {
+      "type": "string"
+    }
+  }
+}
