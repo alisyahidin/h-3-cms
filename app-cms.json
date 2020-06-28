@@ -1,0 +1,10 @@
+{
+  "apps": [
+    {
+      "name": "app-cms",
+      "script": "NODE_ENV=production npm run start",
+      "error_file": "./logs/err.log",
+      "out_file": "./logs/out.log",
+    }
+  ]
+}
