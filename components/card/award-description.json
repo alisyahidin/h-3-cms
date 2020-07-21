@@ -1,0 +1,28 @@
+{
+  "collectionName": "components_card_award_descriptions",
+  "info": {
+    "name": "Award Description",
+    "icon": "align-right"
+  },
+  "options": {},
+  "attributes": {
+    "trophy": {
+      "type": "string"
+    },
+    "category": {
+      "type": "string"
+    },
+    "awarding_event": {
+      "type": "string"
+    },
+    "project_name": {
+      "type": "string"
+    },
+    "product_name": {
+      "type": "string"
+    },
+    "client_name": {
+      "type": "string"
+    }
+  }
+}

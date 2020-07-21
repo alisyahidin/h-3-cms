@@ -33,6 +33,11 @@
     },
     "short_description": {
       "type": "string"
+    },
+    "detail": {
+      "type": "component",
+      "repeatable": true,
+      "component": "card.award-description"
     }
   }
 }
