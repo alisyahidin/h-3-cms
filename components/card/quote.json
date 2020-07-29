@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_card_quotes",
+  "info": {
+    "name": "Quote",
+    "icon": "align-justify"
+  },
+  "options": {},
+  "attributes": {
+    "quote": {
+      "type": "richtext"
+    },
+    "author": {
+      "type": "string"
+    }
+  }
+}

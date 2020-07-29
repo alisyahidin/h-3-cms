@@ -19,6 +19,11 @@
     },
     "philosophy": {
       "type": "richtext"
+    },
+    "quotes": {
+      "type": "component",
+      "repeatable": true,
+      "component": "card.quote"
     }
   }
 }
