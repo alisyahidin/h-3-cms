@@ -26,6 +26,10 @@ const LeftMenuLinksSection = ({
     }),
     'label'
   );
+  
+  if (section === 'plugins' && process.env.NODE_ENV === 'production') {
+    filteredList = filteredList.filter(({ destination }) => destination === '/plugins/upload')
+  }
 
   return (
     <>
