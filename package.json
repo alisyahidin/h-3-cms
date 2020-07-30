@@ -6,25 +6,27 @@
   "scripts": {
     "develop": "strapi develop",
     "start": "strapi start",
-    "start:production": "NODE_ENV=production strapi start",
+    "start:production": "cross-env NODE_ENV=production strapi start",
     "build": "strapi build",
-    "build:production": "NODE_ENV=production strapi build",
+    "build:production": "cross-env NODE_ENV=production strapi build",
     "strapi": "strapi"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "cross-env": "^7.0.2"
+  },
   "dependencies": {
-    "knex": "<0.20.0",
-    "sqlite3": "latest",
-    "strapi": "3.0.2",
-    "strapi-admin": "3.0.2",
-    "strapi-connector-bookshelf": "3.0.2",
+    "knex": "0.21.2",
+    "sqlite3": "5.0.0",
+    "strapi": "3.1.2",
+    "strapi-admin": "3.1.2",
+    "strapi-connector-bookshelf": "3.1.2",
     "strapi-middleware-cache": "^1.0.7",
-    "strapi-plugin-content-manager": "3.0.2",
-    "strapi-plugin-content-type-builder": "3.0.2",
-    "strapi-plugin-email": "3.0.2",
-    "strapi-plugin-upload": "3.0.2",
-    "strapi-plugin-users-permissions": "3.0.2",
-    "strapi-utils": "3.0.2"
+    "strapi-plugin-content-manager": "3.1.2",
+    "strapi-plugin-content-type-builder": "3.1.2",
+    "strapi-plugin-email": "3.1.2",
+    "strapi-plugin-upload": "3.1.2",
+    "strapi-plugin-users-permissions": "3.1.2",
+    "strapi-utils": "3.1.2"
   },
   "author": {
     "name": "A Strapi developer"
