@@ -37,6 +37,9 @@
     },
     "address": {
       "type": "text"
+    },
+    "copy_right": {
+      "type": "string"
     }
   }
 }
